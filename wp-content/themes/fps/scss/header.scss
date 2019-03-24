@@ -1,0 +1,77 @@
+@import 'variables';
+
+.site-header {
+
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+    padding: .5rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &-background {
+        background: #fff;
+        width: 100%;
+    }
+
+    .site-branding {
+        width: 20%;
+        min-width: 200px;
+    }
+
+    .main-navigation {
+        width: 70%;
+        position: relative;
+        display: inline-block;
+
+        ul {
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+
+            @media (max-width: $fps_tablet) {
+                display: none;
+            }
+
+            ul {
+                box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+                position: absolute;
+                left: auto;
+                top: 100%;
+                display: none;
+
+                a {
+                    width: 200px;
+                }
+            }
+
+            li {
+                position: relative;
+                display: inline-block;
+
+                &:hover > ul {
+                    display: block;
+                }
+
+                a {
+                    display: block;
+                    color: $fps_purple;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .menu-toggle {
+            display: none;
+
+            @media (max-width: $fps_tablet) {
+                display: block;
+
+            }
+        }
+    }
+}

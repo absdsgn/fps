@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area>
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -15,5 +15,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
