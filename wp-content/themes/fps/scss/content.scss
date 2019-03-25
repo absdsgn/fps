@@ -1,11 +1,22 @@
 @import 'variables';
 
 #post-10 {
-    content-area {
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 1rem;
-        box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.page-id-10 {
+    footer {
+        display: none;
     }
+}
+
+.entry-content {
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
 }

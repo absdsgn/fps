@@ -1,0 +1,61 @@
+@import 'variables';
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $fps_purple;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $fps_orange;
+    margin: 0;
+    margin-bottom: .25rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: $fps_orange;
+    margin: 0;
+    margin-bottom: .125rem;
+}
+
+p {
+    font-size: 1rem;
+    color: $fps_black;
+    font-weight: 400;
+}
+
+
+.wp-block-button {
+    display: inline-block;
+    margin: .25rem;
+
+    a {
+        border: 2px solid $fps_purple;
+        background: transparent;
+        color: $fps_purple;
+        min-width: 200px;
+        transition: all .15s ease-in-out;
+        font-weight: 500;
+        text-transform: none;
+
+        &:hover {
+            background: $fps_purple;
+            color: #fff;
+        }
+    }
+}
