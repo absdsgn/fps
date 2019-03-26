@@ -18,11 +18,21 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 800;
-    color: $fps_orange;
+    color: $fps_black;
     margin: 0;
-    margin-bottom: .25rem;
+    margin-bottom: 1.25rem;
+}
+
+h2:after {
+    content: '';
+    position: relative;
+    display: block;
+    padding-top: .5rem;
+    border-bottom: 4px solid $fps_yellow;
+    width: 50%;
+    margin: 0 auto;
 }
 
 h3 {
@@ -31,6 +41,16 @@ h3 {
     color: $fps_orange;
     margin: 0;
     margin-bottom: .125rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: .125rem;
+    color: $fps_purple;
+    letter-spacing: .2rem;
 }
 
 p {
