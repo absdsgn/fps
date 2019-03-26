@@ -7,6 +7,20 @@ body {
     box-sizing: border-box;
     font-family: Raleway, sans-serif;
     font-size: 16px;
+    overflow: hidden;
+}
+
+body:before {
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: 0;
+    background-color: $fps_orange;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: skewY(-10deg);
+    opacity: .25;
 }
 
 h1 {
@@ -15,14 +29,16 @@ h1 {
     color: $fps_purple;
     margin: 0;
     margin-bottom: .5rem;
+    line-height: 1.25;
 }
 
 h2 {
     font-size: 2.75rem;
-    font-weight: 800;
-    color: $fps_black;
+    font-weight: 500;
+    color: $fps_purple;
     margin: 0;
     margin-bottom: 1.25rem;
+    line-height: 1.25;
 }
 
 h2:after {
@@ -38,19 +54,30 @@ h2:after {
 h3 {
     font-size: 1.75rem;
     font-weight: 300;
-    color: $fps_orange;
+    color: $fps_black;
     margin: 0;
     margin-bottom: .125rem;
+    line-height: 1.25;
+}
+
+.uc-h3 {
+    width: 70%;
+    margin: 0 auto;
+
+    @media (max-width: $fps_mobile) {
+        width: 100%;
+    }
 }
 
 h4 {
     font-size: 1.25rem;
     font-weight: 200;
-    text-transform: uppercase;
+    text-transform: none;
     margin: 0;
     margin-bottom: .125rem;
-    color: $fps_purple;
-    letter-spacing: .2rem;
+    color: $fps_black;
+    letter-spacing: .01rem;
+    line-height: 1.25;
 }
 
 p {
@@ -64,6 +91,10 @@ p {
     display: inline-block;
     margin: .25rem;
 
+    @media (max-width: $fps_mobile) {
+        width: 100%;
+    }
+
     a {
         border: 2px solid $fps_purple;
         background: transparent;
@@ -72,10 +103,23 @@ p {
         transition: all .15s ease-in-out;
         font-weight: 500;
         text-transform: none;
+        padding: .75rem;
+
+        @media (max-width: $fps_mobile) {
+            background: $fps_orange;
+            border-color: $fps_orange;
+            color: #fff;
+            width: 100%;
+        }
 
         &:hover {
             background: $fps_purple;
             color: #fff;
+
+            @media (max-width: $fps_mobile) {
+                background: $fps_orange;
+                color: #fff;
+            }
         }
     }
 }
